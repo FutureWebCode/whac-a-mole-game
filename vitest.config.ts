@@ -9,4 +9,7 @@ export default defineConfig({
     include: ['**/*.test.ts', '**/*.test.tsx'],
     setupFiles: ['./src/vitest-setup.ts'],
   },
+  define: {
+    global: 'globalThis',
+  },
 })
